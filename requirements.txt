@@ -1,0 +1,21 @@
+# basic Module
+pandas~=2.0.3
+scikit-learn==1.3.0
+matplotlib==3.7.2
+seaborn~=0.12.2
+notebook==7.0.1
+
+# LLM Module
+datasets==2.12.0
+bitsandbytes==0.40.1
+einops==0.6.1
+trl==0.4.7
+torch==2.0.1
+transformers==4.31.0
+peft==0.4.0
+accelerate==0.21.0
+evaluate==0.4.0
+sentencepiece==0.1.99
+wandb==0.15.3
+
+# -U git+https://github.com/huggingface/transformers.git git+https://github.com/huggingface/accelerate.git git+https://github.com/huggingface/peft.git

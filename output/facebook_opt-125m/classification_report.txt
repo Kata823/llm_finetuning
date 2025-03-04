@@ -1,0 +1,15 @@
+                precision    recall  f1-score   support
+
+ kaden-channel       0.00      0.00      0.00       129
+livedoor-homme       0.00      0.00      0.00        69
+    topic-news       0.00      0.00      0.00       115
+        peachy       0.00      0.00      0.00       118
+          smax       0.00      0.00      0.00       138
+dokujo-tsushin       0.00      0.00      0.00       126
+  it-life-hack       0.00      0.00      0.00       135
+  sports-watch       0.12      1.00      0.21       133
+   movie-enter       0.00      0.00      0.00       143
+
+      accuracy                           0.12      1106
+     macro avg       0.01      0.11      0.02      1106
+  weighted avg       0.01      0.12      0.03      1106
