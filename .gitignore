@@ -118,5 +118,6 @@ output/**/special_tokens_map.json
 !output/**/classification_report.txt
 !output/**/confusion_matrix.png
 
-qlora
+output
+model
 data
