@@ -1,0 +1,52 @@
+# @package _global_
+defaults:
+    - _self_
+    
+exp_name: exp001
+    
+model_name: deepseek-llm-7b-base
+dataset: imdb
+
+train_flg: true
+eval_flg: true
+test_flg: true
+    
+path:
+    output_dir: ${paths.output_dir}/${model_name}/${exp_name}
+    
+model:
+    model_name_or_path: ${paths.model_dir}/${model_name}
+
+data:
+    eval_dataset_size: 1024
+    max_eval_samples: 1000
+    source_max_len: 16
+    target_max_len: 512
+    dataset: ${dataset}
+    
+trainer:
+    checkpoint_path: null
+    logging_steps: 10
+    save_strategy: steps
+    save_steps: 500
+    save_total_limit: 40
+    eval_strategy: steps
+    per_device_train_batch_size: 1
+    gradient_accumulation_steps: 16
+    max_steps: 1500
+    eval_steps: 100
+    learning_rate: 0.0002
+    max_grad_norm: 0.3
+    lora_dropout: 0.1
+    weight_decay: 0.0
+    seed: 0
+    bf16: true
+    bits: 4
+    warmup_ratio: 0.03
+    lr_scheduler_type: constant
+    gradient_checkpointing: true
+
+generator:
+    max_new_tokens: 32
+
+    

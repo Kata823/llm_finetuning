@@ -1,0 +1,12 @@
+# @package model
+
+_target_: ilv2.battery.genre_classification.models.clip.model.MobileBatteryClipModel
+
+model_name: clip
+monitor: val/loss
+best_model_path: #logs/mobile_battery/genre_classification/runs/2024-09-06_14-39-46/checkpoints/val/loss=0.161555_epoch=02.ckpt
+
+model_path: stabilityai/japanese-stable-clip-vit-l-16
+num_classes: 4
+lr: 1e-3
+weight_decay: 1e-4

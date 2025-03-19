@@ -1,0 +1,13 @@
+# @package logger
+
+_target_: pytorch_lightning.loggers.mlflow.MLFlowLogger
+
+experiment_name: ${project_name}_${item_genre}_${task_name}
+run_name: ${model.model_name}_${exp_name}
+tracking_uri: https://mlflow-dev-basic-auth-jvydw7rrqq-an.a.run.app/
+tags:
+  model_name: ${model.model_name}
+save_dir: ${paths.log_dir}/mlruns
+prefix: ''
+artifact_location:
+run_id: null

@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - paths: default
+  - model: llm_finetune
+  - experiment: default
+  - _self_
+
+project_name: ds_template
+task_name: ds_template
+
+gcp:
+  mlflow_secrets:
+    username: mlflow-tracking-username
+    password: mlflow-tracking-password
+  project_id: ccbd-ecbdp-bds
